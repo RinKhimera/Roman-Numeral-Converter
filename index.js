@@ -9,7 +9,7 @@ myInput.oninput = function () {
 };
 
 button.addEventListener("click", () => {
-  let input = myInput.value;
+  let input = Math.floor(myInput.value);
   if (input < 1) {
     alert("Please enter a number between 1 and 9999");
     myInput.value = "";
@@ -20,7 +20,7 @@ button.addEventListener("click", () => {
   console.log(input);
 });
 
-let tableRoman = [
+const tableRoman = [
   ["M", 1000],
   ["CM", 900],
   ["D", 500],
